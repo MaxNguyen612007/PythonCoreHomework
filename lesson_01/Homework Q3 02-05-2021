@@ -1,0 +1,4 @@
+name = input("Nhap ten ai do: ")
+print("Xin chao ban %s nhe." % name)
+print(4000 + 1000 - 3000)
+print( 12 * 3 / 4)
