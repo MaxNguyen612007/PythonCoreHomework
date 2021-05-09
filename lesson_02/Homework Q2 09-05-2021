@@ -1,5 +1,6 @@
 name = input("Type in your name: ")
 print("Welcome to Python %s" % name)
 year_born = input("Type in your year of birth: ")
-age = (2021 - int(year_born))
+this_year = 2021
+age = (this_year - int(year_born))
 print("You are %s year old" % age)
