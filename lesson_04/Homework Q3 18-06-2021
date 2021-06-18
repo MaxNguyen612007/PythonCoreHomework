@@ -1,0 +1,2 @@
+n = int(input("Type in n: "))
+if 
