@@ -1,2 +1,6 @@
 n = int(input("Type in n: "))
-if 
+for i in range(0, 10):
+  if i % 3 == 0:
+    sum = 0
+    sum_i = sum + i
+    print(sum_i)
