@@ -1,0 +1,2 @@
+n = int(input("Please type in 'n': "))
+print(n * (n + 1) // 2)
