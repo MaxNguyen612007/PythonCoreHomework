@@ -1,0 +1,3 @@
+x = input("Type in x: ")
+print("max:",max(x))
+print("min:",min(x))
