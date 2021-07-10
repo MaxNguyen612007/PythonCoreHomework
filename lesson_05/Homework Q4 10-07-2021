@@ -1,0 +1,7 @@
+s = ""
+for x in input("Type in s: "):
+    if str(x).lower() == x:
+        s += str(x).upper()
+    else:
+        s += str(x).lower()
+print(s)
