@@ -1,0 +1,8 @@
+x = int(input("x: "))
+n = int(input("n: "))
+print(sum([x**i for i in range(0,n+1)]))
+
+x = int(input("x: "))
+print(sum([-(2*(i%2)-1)*X**i for i in range(0,int(input("n:"))+1)]))
+
+sum([x**n/math.factorial(n) for n in range(0, n)])
