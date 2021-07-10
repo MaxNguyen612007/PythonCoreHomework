@@ -1,9 +1,7 @@
-x = int(input("Type in a positive natural number: "))
-sum = 0
-if x <= 0:
-  print("Please enter a positive natural number")
-else: 
-  for num in range(1, x):
-    sum = sum + num
-    sum = n
-    print(n)
+x = int(input("X:"))
+n = 1
+while True:
+    if n*(n+1)/2 >= x:
+      print(n-1)
+      break
+    n+=1
