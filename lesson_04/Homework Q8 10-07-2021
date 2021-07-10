@@ -1,10 +1,7 @@
 n = int(input("Type in n: "))
-if n > 1000:
-  print("Please enter a whole number between 0 and 1000 ")
-elif n < 0:
+if n > 1000 or n < 0:
   print("Please enter a whole number between 0 and 1000 ")
 else:
-  n = int(n)
   n = str(n)
   x = 0
   for i in n:
