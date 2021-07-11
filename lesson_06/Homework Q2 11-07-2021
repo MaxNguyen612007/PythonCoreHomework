@@ -1,0 +1,4 @@
+def  reverse(string):
+    return "".join(list(reversed(string)))
+
+print(reverse(input()))
