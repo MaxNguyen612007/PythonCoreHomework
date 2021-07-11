@@ -1,0 +1,6 @@
+import string
+
+def ispangram(sentence, alphabet=string.ascii_lowercase): 
+    return set(alphabet) <= set(sentence.lower()) 
+
+print(ispangram(input('Sentence: ')))
