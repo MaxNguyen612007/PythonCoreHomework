@@ -1,0 +1,13 @@
+def count_upper_lower(string):
+  uppers = 0
+  lowers = 0
+  for char in string:
+    if char.islower():
+      lowers += 1
+    elif char.isupper():
+      uppers +=1
+    else: 
+      pass
+  return(uppers, lowers)
+
+print("Uppers and Lowers", count_upper_lower(input()))
