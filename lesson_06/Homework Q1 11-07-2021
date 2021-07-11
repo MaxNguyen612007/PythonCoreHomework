@@ -1,0 +1,5 @@
+x = input("Type in a string:").replace(" ","").split(",")
+def minmax(numbers):
+    return (min(numbers),max(numbers))
+minmaxval = minmax(x)
+print("min:",minmaxval[0],"max:",minmaxval[1])
