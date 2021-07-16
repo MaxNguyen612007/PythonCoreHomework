@@ -1,0 +1,15 @@
+def change_upper_lower(str):
+    ln = len(str)
+    for i in range(ln):
+        if str[i] >= 'a' and str[i] <= 'z':
+            str[i] = chr(ord(str[i]) - 32)
+        elif str[i] >= 'A' and str[i] <= 'Z':
+            str[i] = chr(ord(str[i]) + 32)
+if __name__ == "__main__":
+    str = input("Type in a string: ")
+    str = list(str)
+ 
+    
+    change_upper_lower(str)
+    str = ''.join(str)
+    print(str)
