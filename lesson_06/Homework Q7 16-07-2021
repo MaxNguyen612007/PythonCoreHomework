@@ -1,1 +1,23 @@
+m = float(input("Please enter your mass(kg): "))
+h = float(input("Please enter your height(cm): "))
+def body_mass_index(m, h):
+  for bmi in m, h:
+    bmi = m / (h/100) ** 2
+    return bmi
 
+def bmi_information(m, h):
+  if bmi <= 18.5:
+    return("underweight.")
+  elif bmi <= 24.9: 
+    return("normal.")
+  elif bmi <= 29.9:
+    return("overrweight.")
+  elif bmi <= 34.9:
+    return("obese.")
+  elif bmi > 35:
+    return("extremely obese.")
+
+
+body_mass_index(m, h)
+print(f"Your bmi is {bmi}")
+print(f"You are {bmi_information}")
