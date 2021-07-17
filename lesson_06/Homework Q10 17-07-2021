@@ -1,0 +1,15 @@
+def TribNumRec (n):
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    elif n == 3:
+        return 2
+    elif n > 3:
+        return TribNumRec(n-1)+TribNumRec(n-2)+TribNumRec(n-3)
+        
+def TribNumNonRec(n):
+    bLst = [0,1,1,2]
+    for _ in range(3,n+1):
+        bLst.append(sum(bLst[len(bLst)-3:]))
+    return bLst[n]
