@@ -1,1 +1,19 @@
+def count_odd(n):
+    odd_count = 0
+    while (n > 0):
+        rem = n % 10
+        if (rem % 2 == 0):
+            pass
+        else:
+            odd_count += 1
+             
+        n = int(n / 10)
+     
+    print("\nOdd count : " , odd_count)
+    if (odd_count % 2 != 0):
+        return 1
+    else:
+        return 0
 
+n = int(input("Type in a number: "))
+t = count_odd(n)
