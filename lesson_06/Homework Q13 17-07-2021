@@ -1,0 +1,5 @@
+def find_x(a_list:list,x):
+    if x not in a_list:
+        return -1
+    found_pos = [i for i in range(0,len(a_list)) if a_list[i] == x]
+    return found_pos
