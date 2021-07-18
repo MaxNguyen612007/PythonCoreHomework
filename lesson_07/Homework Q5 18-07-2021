@@ -1,0 +1,2 @@
+my_list = list(input("Type in a list: ").split(", "))
+print(max(my_list,key=my_list.count))
