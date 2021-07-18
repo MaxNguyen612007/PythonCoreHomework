@@ -1,5 +1,12 @@
 total = 0
-my_list = list(input("Type in a list: ")
+my_list = list(input("Type in a list: ").split(", "))
 for i in range(0, len(my_list)):
-  total += my_list(i)
+  total += int(my_list[i])
 print("The sum of all elements in your list is: ", total)
+
+product = 1
+my_list = list(input("Type in a list: ").split(", "))
+for i in range(0, len(my_list)):
+  product *= int(my_list[i])
+print("The product of all elements in your list is: ", product)
+
