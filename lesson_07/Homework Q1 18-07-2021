@@ -1,0 +1,5 @@
+total = 0
+my_list = list(input("Type in a list: ")
+for i in range(0, len(my_list)):
+  total += my_list(i)
+print("The sum of all elements in your list is: ", total)
