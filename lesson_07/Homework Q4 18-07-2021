@@ -1,0 +1,5 @@
+def split_two_parts(my_list, l):
+    return my_list[:l], my_list[l:]
+my_list = list(input("Type in a list: ").split(", "))
+first_list_length = int(input("Type in the length of the first list: "))
+print(split_two_parts(my_list, first_list_length))
