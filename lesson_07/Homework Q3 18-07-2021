@@ -1,0 +1,4 @@
+my_list = list(input("Type in a list: ").split(", "))
+s = list(input("Type in a new list: ").split(", "))
+my_list.extend(s)
+print(my_list)
