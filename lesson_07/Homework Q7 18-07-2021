@@ -1,0 +1,12 @@
+def common_data(list_1, list_2):
+  for x in list_1:
+    for y in list_2:
+      if x == y:
+        result = True
+        return result
+ return result
+
+
+a = input("Type in list 1: ").split(", ")
+b = input("Type in list 2: ").split(", ")
+print(common_data(a, b))
