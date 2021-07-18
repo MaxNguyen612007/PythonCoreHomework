@@ -1,0 +1,3 @@
+my_list = list(input("Type in a list: ").split(", "))
+print(max(my_list))
+print(min(my_list))
