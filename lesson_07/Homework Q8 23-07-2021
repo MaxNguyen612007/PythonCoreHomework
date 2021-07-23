@@ -1,0 +1,11 @@
+def count_ij(A):
+	count = 0
+	for i in range(0, len(A)):
+		for j in range(0, len(A)):
+			if A[i] > A[j] and i < j:
+				count += 1
+	return count
+
+
+A = input("Type in A: ").split(", ")
+print(count_ij(A))
