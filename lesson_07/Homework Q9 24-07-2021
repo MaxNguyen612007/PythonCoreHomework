@@ -1,0 +1,6 @@
+my_list = input("Song IDs: ").split(", ")
+my_new_list = []
+for i in my_list:
+	if i not in my_new_list:
+		my_new_list.append(i)
+print(my_new_list)
