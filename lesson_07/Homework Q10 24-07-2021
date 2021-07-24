@@ -1,0 +1,8 @@
+songs = input("Type in the songs ID: ").split(", ")
+for i in songs:
+	for j in songs:
+		if songs[int(i)] < songs[int(j)] and i == j:
+			songs.pop(j)
+		elif songs[int(i)] > songs[int(j)] and i == j:
+			songs.pop(i)
+			print(len(songs))
