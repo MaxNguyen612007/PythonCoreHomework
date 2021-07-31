@@ -1,0 +1,4 @@
+tups = [(2, 5), (4, 1), (0, 0)]
+itm_reversed = [tuple(reversed(i)) for i in tups]
+ans = [tuple(reversed(i)) for i in sorted(itm_reversed)]
+print(ans)
