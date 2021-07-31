@@ -1,0 +1,7 @@
+my_tuple_1 = (1, 2, 3, 4)
+my_list_1 = list(my_tuple_1)
+print(my_list_1)
+
+my_list_2 = [1, 2, 3, 4]
+my_tuple_2 = tuple(my_list_2)
+print(my_tuple_2)
