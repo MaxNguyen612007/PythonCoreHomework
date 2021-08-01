@@ -1,0 +1,3 @@
+urls =  ["www.hust.edu.vn", "www.wikipedia.org", "www.asp.net", "www.amazon.com"]
+endings = [i[len(i)-"".join(reversed(i)).index("."):] for i in urls]
+print(endings)
