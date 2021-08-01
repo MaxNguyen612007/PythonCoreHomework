@@ -1,0 +1,15 @@
+res = False
+  
+def my_list(lst):
+    if len(lst) < 0 :
+        res = True
+    res = lst.count(lst[0]) == len(lst)
+      
+    if(res):
+        print("Equal")
+    else:
+        print("Not equal")
+  
+    
+lst = ['Python', 'Python', 'Python', 'Python']
+my_list(lst)
