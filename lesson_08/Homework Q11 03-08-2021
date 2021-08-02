@@ -1,0 +1,3 @@
+my_list = input("Please enter a sentence: ").split()
+longest_word = max(my_list, key=len)
+print(longest_word)
