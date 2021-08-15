@@ -1,0 +1,2 @@
+my_dict = {'a': 5, 'b': 10, 'c': 6, 'd': 12, 'e': 7}
+print(max(my_dict, key=my_dict.get))
