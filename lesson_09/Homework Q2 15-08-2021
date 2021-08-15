@@ -1,0 +1,9 @@
+my_dict = {'one': 1, 'two': 2, 'three': 2, 'four': 3}
+test = []
+res = dict()
+for key, val in my_dict.items():
+    if val not in test:
+        test.append(val)
+        res[key] = val
+
+print(str(res)) 
