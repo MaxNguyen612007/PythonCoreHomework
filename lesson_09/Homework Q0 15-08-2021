@@ -1,0 +1,8 @@
+def product(dict):
+     f = dict.values()
+     prod = 1
+     for i in f:
+          prod = prod*i
+     print(prod)
+my_dict={'one':6,'two':9,'three':69}
+product(my_dict)
