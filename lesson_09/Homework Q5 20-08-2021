@@ -1,0 +1,8 @@
+my_dict_1 = {'a': 5, 'b': 10, 'c': 6}
+my_dict_2 = {'a': 5, 'b': 10, 'c': 8}
+my_dict_3 = {}
+for i in my_dict_1.keys():
+	if i in my_dict_2.keys():
+		if my_dict_1[i] == my_dict_2[i]:
+			my_dict_3['a'] = i
+print(my_dict_3)
