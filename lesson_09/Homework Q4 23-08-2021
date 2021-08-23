@@ -1,0 +1,12 @@
+my_dict = {}
+my_dict["key_1"] = [1, 2, 3, 4, 5]
+my_dict["key_2"] = [6, 7, 8, 9, 0]
+my_dict["key_3"] = [5, 4, 3, 2, 1]
+my_list = []
+ele_1 = my_dict["key_1"][4]
+ele_2 = my_dict["key_2"][4]
+ele_3 = my_dict["key_3"][4]
+my_list.append(ele_1)
+my_list.append(ele_2)
+my_list.append(ele_3)
+print(my_list)
