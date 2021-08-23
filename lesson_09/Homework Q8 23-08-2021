@@ -1,0 +1,14 @@
+my_string = "Python"
+p = "P"
+y = "y"
+t = "t"
+h = "h"
+o = "o"
+n = "n"
+count_1 = my_string.count(str(p))
+count_2 = my_string.count(str(y))
+count_3 = my_string.count(str(t))
+count_4 = my_string.count(str(h))
+count_5 = my_string.count(str(o))
+count_6 = my_string.count(str(n))
+print(count_1, count_2, count_3, count_4, count_5, count_6)
