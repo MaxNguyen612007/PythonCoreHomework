@@ -1,0 +1,9 @@
+list =  [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+
+a = []
+for i in list:
+	for j in i:
+		a.append((j,i[j]))
+
+
+print(dict(a))
