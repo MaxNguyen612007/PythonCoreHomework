@@ -1,0 +1,6 @@
+my_sentence = input("Enter a sentence: ")
+
+words_list = my_sentence.split(" ")
+
+print(words_list)
+print(len(words_list))
