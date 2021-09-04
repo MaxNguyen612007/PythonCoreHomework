@@ -1,5 +1,0 @@
-class num:
-    def __init__(self, num):
-        self.num = num
-x = num(1)
-print (type(x).__name__)
