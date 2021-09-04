@@ -1,0 +1,10 @@
+class NewString:
+  def get_string(self, my_string):
+    self.my_string = my_string
+    my_string = input("Type in a string: ")
+
+  def print_string(self, my_string):
+    print(my_string.upper())
+
+string_1 = NewString()
+string_1.print_string('Pls print this')
