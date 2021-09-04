@@ -1,0 +1,15 @@
+class Dog:
+    species = 'mammal'
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def get_biggest_number(*ages):
+        print(f'The oldest dog is {max(ages)}')
+    get_biggest_number(2, 5, 7)
+
+dog_1 = Dog("Fake", 2)
+dog_2 = Dog("Mickey", 7)
+dog_3 = Dog("Fuk", 5)
+	
