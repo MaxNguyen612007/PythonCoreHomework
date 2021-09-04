@@ -1,0 +1,27 @@
+class User:
+  def __init__(self, first_name, last_name, birthday, email, address, username, password):
+    self.first_name = first_name
+    self.last_name = last_name
+    self.birthday = birthday
+    self.email = email
+    self.address = address
+    self.username = username
+    self.password = password
+
+  def login(self, username = 'maxn', password = 123):
+    if username == self.username:
+      if password == self.password:
+        print("You've login successfully")
+    else:
+      print("Incorrect username or password")
+
+  def logout(self):
+    print("You've logged out.")
+
+person_1 = User('max', 'nguyen', 2007, 'max@gmail.com', 'clyde_street', 'maxn', 123)
+person_1.login()
+person_1.logout()
+
+person_2 = User('silver', 'takana', 2008, 'silver@gmail.com', 'i_dunno_street', 'silvert', 456)
+person_2.login()
+person_2.logout()
