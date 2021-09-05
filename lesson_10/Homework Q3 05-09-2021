@@ -1,0 +1,12 @@
+class Pet:
+  def is_hungry(self, dog_status):
+    self.dog_status = dog_status
+    print(f'My dogs are {dog_status}')
+
+  def eat(self):
+    dog_status = 'not hungry'
+    print(f'My dogs are {dog_status}')
+
+dog_1 = Pet()
+dog_1.is_hungry('hungry')
+dog_1.eat()
