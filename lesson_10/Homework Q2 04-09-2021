@@ -1,4 +1,4 @@
-class Dog:
+ class Dog:
     species = 'mammal'
 
     def __init__(self, name, age):
@@ -11,10 +11,6 @@ class Dog:
     def speak(self, sound):
         return f'{self.name} says {sound}'
 
-dog_1 = Dog('Tom', 6)
-dog_2 = Dog('Jerry', 9)
-dog_3 = Dog('Butt', 3)
-dog_4 = Dog('Wine', 1)
 
 class RussellTerrier(Dog):
     def run(self, speed):
@@ -25,12 +21,18 @@ class Bulldog(Dog):
     def run(self, speed):
         return f'{self.name} runs {speed}'
 
-class Pet:
-  dogs_attribute = []
-  dogs_attribute.append([dog_1, dog_2, dog_3, dog_4])
-  
-  def print_out(self):
-    print("I have 4 dogs. Tom is 6. Jerry is 9. Butt is 3. Wine is 1. And they're all mammals, of course.")
 
-pet_1 = Pet()
-pet_1.print_out()
+class Pet:
+    def __init__(self, my_dogs):
+        self.my_dogs = my_dogs
+    
+    def __str__(self):
+        dog_string = ""
+        dog_string += f"I have {len(self.my_dogs)} dogs. "
+        for dog in self.my_dogs:
+            dog_string += f"{dog.name} is {dog.age} years old. "
+        dog_string += "And they are mammals, of course."
+        return dog_string
+
+pets = Pet([Dog("Tom", 6), Dog("Jerry", 9), Dog("Butt", 3), Dog("Wine", 1)])
+print(pets)
