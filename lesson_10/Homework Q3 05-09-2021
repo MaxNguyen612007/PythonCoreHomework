@@ -1,6 +1,5 @@
-class Dog:
+ class Dog:
     species = 'mammal'
-    is_hungry = True
 
     def __init__(self, name, age):
         self.name = name
@@ -12,14 +11,6 @@ class Dog:
     def speak(self, sound):
         return f'{self.name} says {sound}'
 
-    def eat(self):
-      is_hungry = False
-      print("My dogs are not hungry.")
-
-dog_1 = Dog('Tom', 6)
-dog_2 = Dog('Jerry', 9)
-dog_3 = Dog('Butt', 3)
-dog_4 = Dog('Wine', 1)
 
 class RussellTerrier(Dog):
     def run(self, speed):
@@ -30,13 +21,18 @@ class Bulldog(Dog):
     def run(self, speed):
         return f'{self.name} runs {speed}'
 
+
 class Pet:
-  dogs_attribute = []
-  dogs_attribute.append([dog_1, dog_2, dog_3, dog_4])
+    def __init__(self, my_dogs):
+        self.my_dogs = my_dogs
+    
+    def __str__(self):
+        dog_string = ""
+        dog_string += f"I have {len(self.my_dogs)} dogs. "
+        for dog in self.my_dogs:
+            dog_string += f"{dog.name} is {dog.age} years old. "
+        dog_string += "And they are mammals, of course."
+        return dog_string
 
-  def print_out(self):
-    print(f"I have 4 dogs. Tom is 6. Jerry is 9. Butt is 3. Wine is 1. And they're all mammals, of course.")
-
-  def status(self):
-    if is_hungry in Dog == False:
-      print('My dogs are hungry.')
+pets = Pet([Dog("Tom", 6), Dog("Jerry", 9), Dog("Butt", 3), Dog("Wine", 1)])
+print(pets)
