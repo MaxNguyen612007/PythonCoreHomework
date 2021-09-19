@@ -1,0 +1,8 @@
+with open('file1.txt', 'w') as fp:
+  fp.write("hello this is file 1.")
+
+def get_file_size_char(file):
+  with open('file1.txt') as fp:
+    print(len(fp.read()))
+
+get_file_size_char(fp)
