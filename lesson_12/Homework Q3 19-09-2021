@@ -1,11 +1,10 @@
-string = []
-
 with open('file1.txt', 'w') as fp:
   fp.write("Hello this if file 1.")
 
 fp = open('file1.txt')
 
 def extract_characters(file):
+  string = []
   string.append(fp.read())
   return string
 
