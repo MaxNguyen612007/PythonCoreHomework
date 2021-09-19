@@ -1,0 +1,4 @@
+for i in range(0,26):
+    alphabetLeter = chr(65+i)
+    with open(f"{alphabetLeter}.txt", 'w') as fio:
+        print(f"{alphabetLeter}.txt")
