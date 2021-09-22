@@ -1,0 +1,9 @@
+with open("file1.txt", 'w') as f:
+  f.write("This is line 1 \nThis is line 2 \nThis is line 3 \nThis is line 4")
+  
+f = open("file1.txt", 'r')
+no_of_lines = int(input("Pls type in no. of lines u want 2 print out: "))
+
+for i in range(no_of_lines):
+  line = f.readline()
+  print(line)
